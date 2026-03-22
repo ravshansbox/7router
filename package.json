@@ -1,0 +1,24 @@
+{
+  "name": "7router",
+  "version": "0.1.0",
+  "description": "Local proxy to share Claude Code and ChatGPT Plus subscriptions as API endpoints",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "7router": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node --watch dist/index.js serve"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
