@@ -1,6 +1,6 @@
 {
   "name": "7router",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local proxy to share Claude Code and ChatGPT Plus subscriptions as API endpoints",
   "type": "module",
   "main": "dist/index.js",
