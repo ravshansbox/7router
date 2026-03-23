@@ -1,5 +1,4 @@
 import { Command } from 'commander';
-import open from 'open';
 import { authenticateAnthropic } from '../oauth/anthropic.js';
 import { authenticateOpenAICodex } from '../oauth/openai-codex.js';
 import { addAccount, getAccountsByProvider, getDataDir } from '../db/storage.js';
@@ -33,9 +32,8 @@ async function addAuth(provider: Provider): Promise<void> {
   console.log(`Authenticating with ${provider}...\n`);
 
   const onOpenBrowser = async (url: string) => {
-    console.log('Opening browser...\n');
-    console.log(`URL: ${url}\n`);
-    await open(url);
+    console.log('Open this URL in your browser:\n');
+    console.log(`${url}\n`);
   };
 
   try {

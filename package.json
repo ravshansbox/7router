@@ -13,8 +13,7 @@
     "start": "node --watch dist/index.js serve"
   },
   "dependencies": {
-    "commander": "^12.1.0",
-    "open": "^10.1.0"
+    "commander": "^12.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
